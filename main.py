@@ -7,6 +7,7 @@ pg.init()
 BGCOLOR = (100,100,100)
 
 mw = pg.display.set_mode((500, 500))
+pg.display.set_caption('car race')
 mw.fill(BGCOLOR)
 
 clock = pg.time.Clock()
