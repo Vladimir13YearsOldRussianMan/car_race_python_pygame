@@ -48,7 +48,7 @@ class Label(Area):
     def draw(self, shift_x = 0, shift_y = 0):
         pg.draw.rect(mw, self.color, self.rect)
         mw.blit(self.image, (self.rect.x + shift_x, self.rect.y + shift_y))
-
+grass = Area(205, 0, 295, 500, (100, 255, 0)
 car = Picture('pngegg.png',50, 250, 45, 80, BGCOLOR)
 car.image = pg.transform.scale(car.image, (95, 95))
 car.move_right = False
@@ -948,6 +948,7 @@ while run:
                 run = True
                 while run:
                     mw.fill(BGCOLOR)
+                    grass.fill()
                     print_score.setText(f'монетки: {score}', 40, (255, 200, 0))
                     print_score.draw(220,10)
                     car.fill()
@@ -1002,6 +1003,7 @@ while run:
                         car.image = pg.transform.scale(car.image, (70,70))
 
                         mw.fill(BGCOLOR)
+                        grass.fill()
                         for line in lines:
                             line.fill()
                         for b in bes:
