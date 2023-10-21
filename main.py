@@ -333,7 +333,7 @@ while run:
                                         b_cost6.draw(5,5)
                                         b_cost6.border((0,0,0),3)
                                         car_type = 2
-                                        car.image = pg.image.load('pngegg1.png')
+                                        car.image = pg.image.load('car1.png')
                                         print_score.setText(f'баланс: {score}',40)
                                         print_score.draw(100, 50)
                                         esc.draw()
